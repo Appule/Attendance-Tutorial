@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails',        '~> 5.1.6'
+gem 'rails'
 gem 'rails-i18n'
 gem 'bcrypt'
 gem 'faker'
@@ -16,7 +16,7 @@ gem 'turbolinks',   '~> 5'
 gem 'jbuilder',     '~> 2.5'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.13'
+  gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -31,6 +31,4 @@ group :production do
   gem 'pg', '0.20.0'
 end
 
-# Windows環境ではtzinfo-dataというgemを含める必要があります
-# Mac環境でもこのままでOKです
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
